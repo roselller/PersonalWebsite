@@ -1,6 +1,9 @@
 # PersonalWebsite
 > My own personal website (HTML, CSS, JavaScript)
 
+[![license][license-image]][license-url]
+[![changelog][changelog-image]][changelog-url]
+
 This project was started for my Interactive Development module Assignment 1 and will be used for the future.
 ------------------
 
@@ -13,6 +16,7 @@ A: This website is for future employers, colleagues, friends and anyone who want
 
 Q: What is the website catering for?
 A: This website helps keep track of my progress of my relevant achievements and work over the years, be it related to the field I am working in or not.
+
 
 ## Attributes:
 * Usage of normalize.css
@@ -28,3 +32,9 @@ See https://necolas.github.io/normalize.css/latest/normalize.css
 **Git Hub**
 
 See https://github.com/necolas/normalize.css/
+
+
+[changelog-image]: https://img.shields.io/badge/changelog-md-blue.svg?style=flat-square
+[changelog-url]: CHANGELOG.md
+[license-image]: https://img.shields.io/npm/l/normalize.css.svg?style=flat-square
+[license-url]: LICENSE.md
