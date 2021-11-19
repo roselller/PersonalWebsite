@@ -35,6 +35,6 @@ See https://github.com/necolas/normalize.css/
 
 
 [changelog-image]: https://img.shields.io/badge/changelog-md-blue.svg?style=flat-square
-[changelog-url]: CHANGELOGS.md
+[changelog-url]: CHANGELOG.md
 [license-image]: https://img.shields.io/npm/l/normalize.css.svg?style=flat-square
 [license-url]: LICENSE.md
