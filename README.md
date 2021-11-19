@@ -29,7 +29,7 @@ See https://yarnpkg.com/en/package/normalize.css
 
 See https://necolas.github.io/normalize.css/latest/normalize.css
 
-**Git Hub**
+**GitHub**
 
 See https://github.com/necolas/normalize.css/
 
