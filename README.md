@@ -1,2 +1,30 @@
 # PersonalWebsite
-My own personal website (HTML, CSS, JavaScript)
+> My own personal website (HTML, CSS, JavaScript)
+
+This project was started for my Interactive Development module Assignment 1.
+------------------
+
+## QnA:
+Q: What is the audience intent & purpose?
+A: This website is for the audience to view my work, my achievements and more about me.
+
+Q: Who is the website catering for?
+A: This website is for future employers, colleagues, friends and anyone who wants to view more of my work.
+
+Q: What is the website catering for?
+A: This website helps keep track of my progress of my relevant achievements and work over the years, be it related to the field I am working in or not.
+
+## Attributes:
+* Usage of normalize.css
+
+**CDN**
+
+See https://yarnpkg.com/en/package/normalize.css
+
+**Download**
+
+See https://necolas.github.io/normalize.css/latest/normalize.css
+
+**Git Hub**
+
+See https://github.com/necolas/normalize.css/
