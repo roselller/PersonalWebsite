@@ -1,7 +1,7 @@
 # PersonalWebsite
 > My own personal website (HTML, CSS, JavaScript)
 
-This project was started for my Interactive Development module Assignment 1.
+This project was started for my Interactive Development module Assignment 1 and will be used for the future.
 ------------------
 
 ## QnA:
