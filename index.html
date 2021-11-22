@@ -10,7 +10,7 @@
 </head>
 <body>
    <header id="header">
-      <img src="header-img.png" alt="Header background image" id="header-img">
+      <img src="header-img-home.png" alt="Header background image" id="header-img">
       <h6 id="header-name">ARMIROLA ROSELLER III TUMOLVA</h6>
    </header>
 
@@ -21,7 +21,7 @@
    </nav>
 
    <section id="aspirations">
-      <h1 id="aspirations-title">MY ASPIRATIONS</h1>
+      <h1 id="aspirations-title"><center>MY ASPIRATIONS</center></h1>
       <h2 id="aspirations-subtitle-DA">DATA ANALYST/SCIENTIST</h2>
       <h2 id="aspirations-subtitle-CISM">COMPUTER & INFORMATION SYSTEMS MANAGER</h2>
       <p id="aspirations-paragraph-DA">Data Analysis/Science has been a goal I have been pursuing for the longest time. Being able to assist businesses by analyzing and identifying patterns and trends in data to address their needs and concerns and the process to do so is something that has intrigued me the most.</p>
@@ -29,23 +29,36 @@
    </section>
 
    <section id="personal">
-      <h3 id="personal-title">STUDENT IN INFORMATION TECHNOLOGY (NGEE ANN POLYTECHNIC)</h3>
-      <img src="personal-img.png" alt="An image of me" id="personal-img">
-      <h3 id="personal-name">Armirola Roseller III Tumolva</h3>
+      <center>
+         <h3 id="personal-title">STUDENT IN INFORMATION TECHNOLOGY (NGEE ANN POLYTECHNIC)</h3>
+         <img src="personal-img.png" alt="An image of me" id="personal-img">
+         <h3 id="personal-name">Armirola Roseller III Tumolva</h3>
+      </center>
    </section>
 
    <section id="contact">
       <h1 id="contact-title">GET IN TOUCH</h1>
       <p id="contact-paragraph-details">Armirola Roseller III Tumolva<br><br>Email:<br>armirolaroseller@gmail.com<br><br>Tel:<br>+65 83886624</p>
       <form id="contact-form">
-         <label class="contact-form-label">
-            <input type="text" id="contact-form-name" required>
+         <label class="contact-form-label">NAME
+            <input type="text" placeholder="First" id="contact-form-FN" required>
+            <input type="text" placeholder="Last" id="contact-form-LN">
          </label>
          
-         <label class="contact-form-label">
-            
+         <label class="contact-form-label">EMAIL
+            <input type="text" id="contact-form-email" required>
          </label>
+
+         <label class="contact-form-label">COMMENT
+            <input type="text" id="contact-form-comment" required>
+         </label>
+
+         <button type="submit" id="contact-form-submit">SUBMIT</button>
       </form>
    </section>
+
+   <footer id="footer">
+      <p id="footer-paragraph-details">@ 2021 Roseller's About Me</p>
+   </footer>
 </body>
 </html>
