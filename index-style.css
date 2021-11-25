@@ -60,33 +60,26 @@ h1, h2, h3, h6, p, label{
 
 #aspiration{
    display: flex;
-   align-items: center;
-   justify-content: center;
-   padding: 250px;
+   flex: 50%;
+   align-items: right;
+   justify-content: space-around;
+   padding-top: 170px;
+}
+
+#aspiration-2{
+   display: flex;
+   flex: 50%;
+   align-items: left;
+   justify-content: space-around;
+   padding: 170px;
 }
 
 #aspiration-subtitle-DA{
-   padding: 25px 100px;
    text-align: right;
-   width: 100%;
-}
-
-#aspiration-subtitle-CISM{
-   padding: 25px 100px;
-   text-align: left;
-   width: 100%;
 }
 
 #aspiration-paragraph-DA{
-   padding: 25px 100px;
    text-align: right;
-   width: auto;
-}
-
-#aspiration-paragraph-CISM{
-   padding: 25px 100px;
-   text-align: left;
-   width: auto;
 }
 
 /*--Personal styling--*/
