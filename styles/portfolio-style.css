@@ -50,60 +50,8 @@ h1, h2, h3, h6, p, label{
    opacity: 0.6;
 }
 
-/*--Aspirations styling--*/
-#aspiration-title{
-   position: absolute;
-   top: 200px;
-   width: 100%;
-   font-size: 60px;
-}
+/*--Achievements styling--*/
 
-#aspiration{
-   display: flex;
-   flex: 50%;
-   align-items: right;
-   justify-content: space-around;
-   padding-top: 170px;
-}
-
-#aspiration-2{
-   display: flex;
-   flex: 50%;
-   align-items: left;
-   justify-content: space-around;
-   padding: 170px;
-}
-
-#aspiration-subtitle-DA{
-   text-align: right;
-}
-
-#aspiration-paragraph-DA{
-   text-align: right;
-}
-
-/*--Personal styling--*/
-#personal-title{
-   position: relative;
-   top: 250px;
-   font-size: 25px;
-}
-
-#personal{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   padding: 250px;
-   background-color: #E8E8E8;
-}
-
-#personal-img{
-   width: 300px;
-}
-
-#personal-name{
-   font-size: 30px;
-}
 
 /*--Footer styling--*/
 #footer{
