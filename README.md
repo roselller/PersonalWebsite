@@ -41,6 +41,7 @@ This website contains 3 pages (Main, Portfolio, About).
 
 ### Features to be implemented:
 - Projects section in portfolio page to be a slideshow
+- PHP file to process form data on "Home" page
 
 ## Technologies used
 

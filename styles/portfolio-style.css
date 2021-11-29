@@ -51,7 +51,87 @@ h1, h2, h3, h6, p, label{
 }
 
 /*--Achievements styling--*/
+#achievement-title{
+   top: 200px;
+   width: 100%;
+   font-size: 60px;
+}
 
+#achievement-container{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   align-items: center;
+   justify-content: space-between;
+   padding: 25px 0px 100px;
+}
+
+#achievement{
+   display: flex;
+   justify-content: space-between;
+   padding-left: 50px;
+   padding-right: 50px;
+   width: 70%;
+}
+
+#achievement-2{
+   display: flex;
+   justify-content: space-between;
+   width: 75%;
+}
+
+/*--Project styling--*/
+#project-title{
+   position: relative;
+   top: 160px;
+   width: 100%;
+   font-size: 60px;
+}
+
+#project-container{
+   display: flex;
+   padding: 150px 100px 150px;
+   background-color: #E8E8E8;
+   justify-content: space-between;
+}
+
+#project{
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   float: left;
+   padding: 10px 50px 50px;
+   text-align: right;
+}
+
+#project-img-1{
+   width: 50%;
+   height: 100%;
+}
+
+/*--Socials styling--*/
+#social{
+   display: flex;
+   padding: 70px 0px 70px;
+   justify-content: center;
+}
+
+.social-form-button{
+   padding: 10px 20px;
+   margin: 10px 60px 10px;
+   text-decoration: none;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 30px;
+   color:#181818;
+   background-color: transparent;
+   border: 2px solid #181818;
+   border-radius: 5px;
+   bottom: -40px;
+}
+
+.social-form-button:hover{
+   opacity: 0.6;
+}
 
 /*--Footer styling--*/
 #footer{
@@ -62,7 +142,7 @@ h1, h2, h3, h6, p, label{
    background-color: #E8E8E8;
 }
 
-#footer-paragraph-details{
+#footer-paragraph-detail{
    position: absolute;
    top: 15px;
    right: 10px;

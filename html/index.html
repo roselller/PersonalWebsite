@@ -7,16 +7,38 @@
    <link href="../styles/normalize.css" rel="stylesheet" type="text/css"> <!--Normalize CSS-->
    <link href="../styles/index-style.css" rel="stylesheet" type="text/css">
    <link href="../styles/index-media-style.css" rel="stylesheet" type="text/css">
-   <script src="../styles/index-script.js" defer></script>
-   <title>Home</title>
+   <script src="../scripts/index-script.js" defer></script>
+   <title>HOME - ROSELLER</title>
+
+   <!--For fade-in animation when loading webpage-->
+   <style>
+      html{
+         background-color: rgba(0, 0, 0, 0.9);
+      }
+
+      body{
+         opacity: 1;
+         transition: 0.6s opacity;
+         background-color: white;
+      }
+
+      body.fade-out{
+         opacity: 0;
+         transition: none;
+      }
+   </style>
 </head>
 <body>
+   <script>
+      document.body.classList.add('fade-out');
+   </script>
+
    <header id="header"> <!--Header with background image and full name on top right of website-->
       <img src="../images/header-img-index.JPG" alt="Header background image" id="header-img">
       <h6 id="header-name">ARMIROLA<br>ROSELLER<br>III TUMOLVA</h6>
 
       <nav id="navigation"> <!--Navigation bar on top left of website overlapping header background img-->
-         <a href="../html/index.html" class="current">HTML</a>
+         <a href="../html/index.html" class="current">HOME</a>
          <a href="../html/portfolio.html">PORTFOLIO</a>
          <a href="../html/about.html">ABOUT</a>
       </nav>
@@ -60,15 +82,17 @@
          </label>
          <br>
          <label class="contact-form-label">COMMENT<br>
-            <input type="text" id="contact-form-comment" required>
+            <textarea type="text" rows="8" id="contact-form-comment" required></textarea>
          </label>
          <br>
          <button type="submit" id="contact-form-submit">SUBMIT</button>
       </form>
+
+      <h3 id="contact-thank" style="display: none;">Thank you!</h3>
    </section>
 
    <footer id="footer"> <!--Footer-->
-      <p id="footer-paragraph-details">Copyright 2021 by Armirola Roseller III Tumolva. All Rights Reserved.</p>
+      <p id="footer-paragraph-detail">Copyright 2021 by Armirola Roseller III Tumolva. All Rights Reserved.</p>
    </footer>
 </body>
 </html>

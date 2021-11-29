@@ -8,55 +8,84 @@
    <link href="../styles/portfolio-style.css" rel="stylesheet" type="text/css">
    <link href="../styles/portfolio-media-style.css" rel="stylesheet" type="text/css">
    <script src="../scripts/portfolio-script.js" defer></script>
-   <title>Portfolio</title>
+   <title>PORTFOLIO - ROSELLER</title>
+
+   <!--For fade-in animation when loading webpage-->
+   <style>
+      html{
+         background-color: rgba(0, 0, 0, 0.9);
+      }
+
+      body{
+         opacity: 1;
+         transition: 0.6s opacity;
+         background-color: white;
+      }
+
+      body.fade-out{
+         opacity: 0;
+         transition: none;
+      }
+   </style>
 </head>
 <body>
+   <script>
+      document.body.classList.add('fade-out');
+   </script>
+
    <header id="header"> <!--Header with background image and full name on top right of website-->
       <img src="../images/header-img-portfolio.JPG" alt="Header background image" id="header-img">
       <h6 id="header-name">ARMIROLA<br>ROSELLER<br>III TUMOLVA</h6>
 
       <nav id="navigation"> <!--Navigation bar on top left of website overlapping header background img-->
-         <a href="../html/index.html" class="current">HTML</a>
+         <a href="../html/index.html" class="current">HOME</a>
          <a href="../html/portfolio.html">PORTFOLIO</a>
          <a href="../html/about.html">ABOUT</a>
       </nav>
    </header>
 
-   <section id="achivements">
-      <h1 id="achievements-title">ACHIEVEMENTS</h1>
-      <h2 class="achievements-subtitle">COURSES</h2>
-      <h2 class="achievements-subtitle">HONORS & AWARDS</h2>
-      <h2 class="achievements-subtitle">LANGUAGES</h2>
-      <h2 class="achievements-subtitle">TEST SCORE</h2>
-      <p class="achievements-paragraph">Advanced Statistics<br>Communication Essentials<br>Computing Mathematics<br>Cyber Security Fundamentals<br>Data Science Fundamentals<br>Databases<br>Design Principles<br>Interactive Development<br>Korean Language<br>OS & Networking Fundamentals<br>Programming 1, 2</p>
-      <p class="achievements-paragraph"><b>Dunearn Secondary School:</b><br>Inter-class Cross country 2019 (Silver)<br>Inter-class Cross country 2018 (Bronze)<br>Inter-class Cross country 2017 (Silver)<br>Young Engineer STEM Program 2017 (Bronze)</p>
-      <p class="achievements-paragraph">Chinese (Limited working proficiency)<br>English (Native or bilingual proficiency)<br>French (Elementary proficiency)<br>Korean (Elementary proficiency)</p>
-      <p class="achievements-paragraph">GCE O' Levels (NET Aggregate 11)</p>
+   <h1 id="achievement-title"><center>ACHIEVEMENTS</center></h1>
+   <section id="achievement-container">
+      <article id="achievement"> <!--Flex container for subtitles-->
+         <h2 class="achievement-subtitle">COURSES</h2>
+         <h2 class="achievement-subtitle">HONORS & AWARDS</h2>
+         <h2 class="achievement-subtitle">LANGUAGES</h2>
+         <h2 class="achievement-subtitle">TEST SCORE</h2>
+      </article>
+
+      <article id="achievement-2"> <!--Flex container for content-->
+         <p class="achievement-paragraph">Advanced Statistics<br>Communication Essentials<br>Computing Mathematics<br>Cyber Security Fundamentals<br>Data Science Fundamentals<br>Databases<br>Design Principles<br>Interactive Development<br>Korean Language<br>OS & Networking Fundamentals<br>Programming 1, 2</p>
+         <p class="achievement-paragraph"><b>Dunearn Secondary School:</b><br>Inter-class Cross country 2019 (Silver)<br>Inter-class Cross country 2018 (Bronze)<br>Inter-class Cross country 2017 (Silver)<br>Young Engineer STEM Program 2017 (Bronze)</p>
+         <p class="achievement-paragraph">Chinese (Limited working proficiency)<br>English (Native or bilingual proficiency)<br>French (Elementary proficiency)<br>Korean (Elementary proficiency)</p>
+         <p class="achievement-paragraph">GCE O' Levels (NET Aggregate 11)</p>
+      </article>
    </section>
 
-   <section id="projects">
-      <h1 id="projects-title">PROJECTS</h1>
-      <h2 id="projects-subtitle-1">PYTHON MULTI-FUNCTION APPLICATION</h2>
-      <p id="projects-paragraph-1">With the end of the first semester in Ngee Ann Polytechnic, I put my Python skills to the test and made a small application with various functions.<br><br>These functions include a "Multiplication Table", "BMI Calculator", "Compound Interest Calculator", "Caesar Cipher", "Plate Validation" and "Morse Code Translator", all of which are actually activities done in my Programming 1 module lessons.<br><br>If you wish to try this application out yourself, click here to download it (9,479 KB) </p>
+   <h1 id="project-title"><center>PROJECTS</center></h1>
+   <section id="project-container">
+      <article id="project">
+         <h2 id="project-subtitle-1">PYTHON MULTI-FUNCTION APPLICATION</h2>
+         <p id="project-paragraph-1">With the end of the first semester in Ngee Ann Polytechnic, I put my Python skills to the test and made a small application with various functions.<br><br>These functions include a "Multiplication Table", "BMI Calculator", "Compound Interest Calculator", "Caesar Cipher", "Plate Validation" and "Morse Code Translator", all of which are actually activities done in my Programming 1 module lessons.<br><br>If you wish to try this application out yourself, click <a href="../extras/PythonGUI.exe" target="_blank">here</a> to download it (9,479 KB) </p>
+      </article>
       <img src="../images/project-img-1.png" alt="An image of project 1" id="project-img-1">
    </section>
 
-   <section id="socials">
-      <form action="https://www.linkedin.com/in/roseller-armirola-iii/" id="socials-form-linkedin">
-         <input type="submit" value="LINKEDIN" class="socials-form-button" />
+   <section id="social">
+      <form action="https://www.linkedin.com/in/roseller-armirola-iii/" target="_blank" id="social-form-linkedin">
+         <input type="submit" value="LINKEDIN" class="social-form-button" />
       </form>
 
-      <form action="/resume.pdf/" id="socials-form-resume">
-         <input type="submit" value="RESUME" class="socials-form-button" />
+      <form action="../extras/resume.pdf" target="_blank" id="social-form-resume">
+         <input type="submit" value="RESUME" class="social-form-button" />
       </form>
 
-      <form action="https://github.com/roselller" id="socials-form-github">
-         <input type="submit" value="GITHUB" class="socials-form-button" />
+      <form action="https://github.com/roselller" target="_blank" id="social-form-github">
+         <input type="submit" value="GITHUB" class="social-form-button" />
       </form>
    </section>
 
    <footer id="footer">
-      <p id="footer-paragraph-details">Copyright 2021 by Armirola Roseller III Tumolva. All Rights Reserved.</p>
+      <p id="footer-paragraph-detail">Copyright 2021 by Armirola Roseller III Tumolva. All Rights Reserved.</p>
    </footer>
 </body>
 </html>

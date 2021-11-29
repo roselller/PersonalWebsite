@@ -50,6 +50,102 @@ h1, h2, h3, h6, p, label{
    opacity: 0.6;
 }
 
+/*--Informatino styling--*/
+#information-title{
+   top: 200px;
+   width: 100%;
+   font-size: 60px;
+}
+
+#information{
+   display: flex;
+   justify-content: center;
+   padding: 25px 300px 90px;
+}
+
+#information-img{
+   width: 20%;
+   height: auto;
+}
+
+#information-paragraph{
+   padding: 0px 30px 0px;
+   width: 55%;
+}
+
+/*--Hobbies & Interests styling--*/
+#hobbiesinterest-title{
+   position: relative;
+   top: 160px;
+   font-size: 60px;
+}
+
+#hobbiesinterest{
+   display: flex;
+   justify-content: center;
+   padding: 180px 300px 150px;
+   background-color: #E8E8E8;
+}
+
+#hobbiesinterest-img{
+   width: 20%;
+   height: auto;
+}
+
+#hobbiesinterest-paragraph{
+   padding: 0px 30px 0px;
+   text-align: right;
+   width: 55%;
+}
+
+/*--Skillsets styling--*/
+#skillset-title{
+   top: 160px;
+   font-size: 60px;
+}
+
+#skillset-container{
+   display: flex;
+   justify-content: center;
+   padding: 20px 300px 50px;
+}
+
+#skillset, #skillset-2{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   margin: 0px;
+}
+
+#skillset-left, #skillset-right{
+   font-size: 35px;
+   margin: 5px;
+}
+
+/*--Social styling--*/
+#social{
+   display: flex;
+   padding: 40px 0px 40px;
+   justify-content: center;
+}
+
+.social-form-button{
+   padding: 10px 20px;
+   margin: 10px 60px 10px;
+   text-decoration: none;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 30px;
+   color:#181818;
+   background-color: transparent;
+   border: 2px solid #181818;
+   border-radius: 5px;
+   bottom: -40px;
+}
+
+.social-form-button:hover{
+   opacity: 0.6;
+}
+
 /*--Footer styling--*/
 #footer{
    display: flex;
@@ -59,7 +155,7 @@ h1, h2, h3, h6, p, label{
    background-color: #E8E8E8;
 }
 
-#footer-paragraph-details{
+#footer-paragraph-detail{
    position: absolute;
    top: 15px;
    right: 10px;

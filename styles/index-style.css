@@ -60,10 +60,9 @@ h1, h2, h3, h6, p, label{
 #aspiration-container{
    display: flex;
    position: relative;
-   align-items: center;
-   justify-content: space-between;
+   justify-content: center;
    padding: 25px 500px 100px;
-   float:left;
+   float: left;
 }
 
 #aspiration{
@@ -123,14 +122,13 @@ h1, h2, h3, h6, p, label{
    display: flex;
    flex: 1 0 70%;
    flex-direction: column;
-   padding: 75px 200px 300px;
+   padding: 75px 200px 150px;
 }
 
 #contact-form-FN, #contact-form-LN{
    width: 40%;
    padding: 12px 20px;
    margin: 8px 0;
-   display: inline-block;
    border: 1px solid lightgray;
    border-radius: 4px;
    box-sizing: border-box;
@@ -140,7 +138,6 @@ h1, h2, h3, h6, p, label{
    width: 80%;
    padding: 12px 20px;
    margin: 8px 0;
-   display: inline-block;
    border: 1px solid lightgray;
    border-radius: 4px;
    box-sizing: border-box;
@@ -151,7 +148,6 @@ h1, h2, h3, h6, p, label{
    height: 200px;
    padding: 12px 20px;
    margin: 8px 0;
-   display: inline-block;
    border: 1px solid lightgray;
    border-radius: 4px;
    box-sizing: border-box;
@@ -176,7 +172,7 @@ h1, h2, h3, h6, p, label{
    background-color: #E8E8E8;
 }
 
-#footer-paragraph-details{
+#footer-paragraph-detail{
    position: absolute;
    top: 15px;
    right: 10px;

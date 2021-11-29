@@ -8,49 +8,79 @@
    <link href="../styles/about-style.css" rel="stylesheet" type="text/css">
    <link href="../styles/about-media-style.css" rel="stylesheet" type="text/css">
    <script src="../scripts/about-script.js" defer></script>
-   <title>About</title>
+   <title>ABOUT - ROSELLER</title>
+
+   <!--For fade-in animation when loading webpage-->
+   <style>
+      html{
+         background-color: rgba(0, 0, 0, 0.9);
+      }
+
+      body{
+         opacity: 1;
+         transition: 0.6s opacity;
+         background-color: white;
+      }
+
+      body.fade-out{
+         opacity: 0;
+         transition: none;
+      }
+   </style>
 </head>
 <body>
+   <script>
+      document.body.classList.add('fade-out');
+   </script>
+
    <header id="header"> <!--Header with background image and full name on top right of website-->
       <img src="../images/header-img-about.JPG" alt="Header background image" id="header-img">
       <h6 id="header-name">ARMIROLA<br>ROSELLER<br>III TUMOLVA</h6>
 
       <nav id="navigation"> <!--Navigation bar on top left of website overlapping header background img-->
-         <a href="../html/index.html" class="current">HTML</a>
+         <a href="../html/index.html" class="current">HOME</a>
          <a href="../html/portfolio.html">PORTFOLIO</a>
          <a href="../html/about.html">ABOUT</a>
       </nav>
    </header>
 
+   <h1 id="information-title"><center>MORE INFORMATION</center></h1>
    <section id="information">
       <img src="../images/information-img.jpg" alt="An image of me" id="information-img">
       <p id="information-paragraph">I am a freelance artist and IT student with experience and small background in creative design with Adobe Creative Cloud (Photoshop, After Effects, Illustrator), as well as in fashion and modelling. Currently studying and learning to be an IT professional with Data Science, Cybersecurity, programming experience and skills. I consider myself to be a leader and learner with never-ending curiosity, focused on fulfilling my goals and aspirations.<br><br>Being surrounded by technology and family members working in IT related fields, I became bound to be interested in learning and experiencing the vast amount of technology I am buried in. This ranges from the mechanical side of computers and their hardware, to the digital side of phones and their software.</p>
    </section>
 
-   <section id="hobbiesinterests">
-      <p id="hobbiesinterests-paragraph">Fashion and Art have been my most invested hobbies for years as they have allowed me to express my feelings and creativity as much as I want. I wish to influence my audience to seek out for creativity and get out of their confort zones to try something new.<br><br>My passion for IT came about when I was 16 years old after realizing that this is what I wished to pursue. As I tend to be logical and analytical to balance my love for aesthetics, Mathematics and Science was something I was also greatly interested in. Being able to help people with my knowledge of IT is what I wish to achieve in the future with the profession I aspire to be in.</p>
+   <h1 id="hobbiesinterest-title"><center>HOBBIES & INTERESTS</center></h1>
+   <section id="hobbiesinterest">
+      <p id="hobbiesinterest-paragraph">Fashion and Art have been my most invested hobbies for years as they have allowed me to express my feelings and creativity as much as I want. I wish to influence my audience to seek out for creativity and get out of their confort zones to try something new.<br><br>My passion for IT came about when I was 16 years old after realizing that this is what I wished to pursue. As I tend to be logical and analytical to balance my love for aesthetics, Mathematics and Science was something I was also greatly interested in. Being able to help people with my knowledge of IT is what I wish to achieve in the future with the profession I aspire to be in.</p>
       <img src="../images/hobbiesinterests-img.png" alt="An image of my fashion" id="hobbiesinterest-img">
    </section>
 
-   <section id="skillsets">
-      <h2 class="skillsets-skill-left">ADOBE CREATIVE</h2>
-      <h2 class="skillsets-skill-right">C#</h2>
-      <h2 class="skillsets-skill-left">HTML & CSS</h2>
-      <h2 class="skillsets-skill-right">PYTHON</h2>
-      <h2 class="skillsets-skill-left">POWER BI</h2>
-      <h2 class="skillsets-skill-right">JAVASCRIPT</h2>
-      <h2 class="skillsets-skill-left">SQL</h2>
-      <h2 class="skillsets-skill-right">MICROSOFT OFFICE</h2>
+   <h1 id="skillset-title"><center>SKILL SETS</center></h1>
+   <section id="skillset-container">
+      <article id="skillset">
+         <h2 id="skillset-left">ADOBE CREATIVE</h2>
+         <h2 id="skillset-left">HTML & CSS</h2>
+         <h2 id="skillset-left">POWER BI</h2>
+         <h2 id="skillset-left">SQL</h2>
+      </article>
+
+      <article id="skillset-2">
+         <h2 id="skillset-right">C#</h2>
+         <h2 id="skillset-right">PYTHON</h2>
+         <h2 id="skillset-right">JAVASCRIPT</h2>
+         <h2 id="skillset-right">MICROSOFT OFFICE</h2>
+      </article>
    </section>
 
-   <section id="socials">
-      <form action="https://www.linkedin.com/in/roseller-armirola-iii/" id="socials-form-linkedin">
-         <input type="submit" value="LINKEDIN" class="socials-form-button" />
+   <section id="social">
+      <form action="https://www.linkedin.com/in/roseller-armirola-iii/" id="social-form-linkedin">
+         <input type="submit" value="LINKEDIN" class="social-form-button" />
       </form>
    </section>
 
    <footer id="footer">
-      <p id="footer-paragraph-details">Copyright 2021 by Armirola Roseller III Tumolva. All Rights Reserved.</p>
+      <p id="footer-paragraph-detail">Copyright 2021 by Armirola Roseller III Tumolva. All Rights Reserved.</p>
    </footer>
 </body>
 </html>
