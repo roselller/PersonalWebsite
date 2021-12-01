@@ -1,0 +1,68 @@
+/*--Media Queries styling--*/
+/*--Media queries for iphone x (medium sized devices)--*/
+@media only screen and (max-width: 375px){
+   /*--General styling--*/
+   *{
+      margin: 0px;
+   }
+
+   /*--Header styling--*/
+   #header-name{
+      font-size: 30px;
+      padding: 20px 15px 20px;
+      z-index: 3;
+   }
+
+   #header-img{
+      z-index: 2;
+   }
+
+   /*--Navigation styling--*/
+   .navigation-menu{
+      position: absolute;
+      top: -20px;
+      left: 0px;
+      width: 375px;
+      margin: auto;
+      flex-direction: column;
+      background-color: #fff;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+      z-index: 1;
+   }
+
+   .navigation-menu.active{
+      top: 155px;
+      left: 0px;
+   }
+
+   .navigation-item{
+      color: #000;
+   }
+
+   .hamburger{
+      display: block;
+      position: relative;
+      top: 45px;
+      right: 20px;
+      padding: 10px 15px 10px;
+      margin: auto;
+      cursor: pointer;
+      z-index: 3;
+   }
+
+   /*Animation to turn hamburger into x*/
+   .hamburger.active .bar:nth-child(2) {
+         opacity: 0;
+   }
+
+   .hamburger.active .bar:nth-child(1) {
+         transform: translateY(10px) rotate(45deg);
+   }
+
+   .hamburger.active .bar:nth-child(3) {
+         transform: translateY(-10px) rotate(-45deg);
+   }
+}

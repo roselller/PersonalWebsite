@@ -1,11 +1,160 @@
 /*--Media Queries styling--*/
-@media only screen and (min-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 2){
-   body{
-      overflow: hidden;
+/*--Media queries for iphone x (medium sized devices)--*/
+@media only screen and (max-width: 375px){
+   /*--General styling--*/
+   *{
+      margin: 0px;
    }
 
-   section#aspiration-title{
+   /*--Header styling--*/
+   #header-name{
+      font-size: 30px;
+      padding: 20px 15px 20px;
+      z-index: 3;
+   }
+
+   #header-img{
+      z-index: 2;
+   }
+
+   /*--Navigation styling--*/
+   .navigation-menu{
+      position: absolute;
+      top: -20px;
+      left: 0px;
+      width: 375px;
+      margin: auto;
+      flex-direction: column;
+      background-color: #fff;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+      z-index: 1;
+   }
+
+   .navigation-menu.active{
+      top: 155px;
+      left: 0px;
+   }
+
+   .navigation-item{
+      color: #000;
+   }
+
+   .hamburger{
+      display: block;
+      position: relative;
+      top: 45px;
+      right: 20px;
+      padding: 10px 15px 10px;
+      margin: auto;
+      cursor: pointer;
+      z-index: 3;
+   }
+
+   /*Animation to turn hamburger into x*/
+   .hamburger.active .bar:nth-child(2) {
+         opacity: 0;
+   }
+
+   .hamburger.active .bar:nth-child(1) {
+         transform: translateY(10px) rotate(45deg);
+   }
+
+   .hamburger.active .bar:nth-child(3) {
+         transform: translateY(-10px) rotate(-45deg);
+   }
+
+   /*--Aspirations styling--*/
+   #aspiration-title{
       font-size: 40px;
    }
-   
+
+   #aspiration-container{
+      flex-direction: column;
+      padding: 10px 20px 50px;
+   }
+
+   #aspiration, #aspiration-2{
+      text-align: center;
+      margin: 0px 0px 30px;
+   }
+
+   #aspiration-subtitle-DA, #aspiration-subtitle-CISM{
+      font-size: 20px;
+      margin-bottom: 20px;
+   }
+
+   #aspiration-paragraph-DA, #aspiration-paragraph-CISM{
+      font-size: 10px;
+   }
+
+   /*--Personal styling--*/
+   #personal-title{
+      font-size: 17px;
+      width: 90%;
+      margin: auto;
+      top: 100px;
+   }
+
+   #personal{
+      padding: 130px 0px 90px;
+   }
+
+   #personal-img{
+      width: 200px;
+   }
+
+   #personal-name{
+      width: 100%;
+      font-size: 25px;
+   }
+
+   #contact-container{
+      flex-direction: column;
+   }
+
+   #contact{
+      padding: 0px;
+      margin: 20px 10px 40px;
+   }
+
+   #contact-2{
+      padding: 0px;
+      margin: 20px 10px 40px;
+   }
+
+   #contact-form{
+      width: 100%;
+   }
+
+   #contact-form-FN, #contact-form-LN{
+      width: 45%;
+      padding: 6px 8px;
+   }
+
+   #contact-form-email{
+      width: 100%;
+      padding: 6px 8px;
+   }
+
+   #contact-form-comment{
+      width: 100%;
+      padding: 6px 8px;
+   }
+
+   #thank-you{
+      top: -30px;
+   }
+
+   #footer{
+      height: 50px;
+   }
+
+   #footer-paragraph-detail{
+      top: 16px;
+      right: 10px;
+      font-size: 11px;
+   }
 }

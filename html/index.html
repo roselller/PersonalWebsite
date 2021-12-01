@@ -21,10 +21,18 @@
       <img src="../images/header-img-index.JPG" alt="Header background image" id="header-img">
       <h6 id="header-name">ARMIROLA<br>ROSELLER<br>III TUMOLVA</h6>
 
-      <nav id="navigation"> <!--Navigation bar on top left of website overlapping header background img-->
-         <a href="../html/index.html" class="current">HOME</a>
-         <a href="../html/portfolio.html">PORTFOLIO</a>
-         <a href="../html/about.html">ABOUT</a>
+      <nav class="navigation"> <!--Navigation bar on top left of website overlapping header background img-->
+         <article class="navigation-menu">
+            <a href="../html/index.html" class="navigation-item">HOME</a>
+            <a href="../html/portfolio.html" class="navigation-item">PORTFOLIO</a>
+            <a href="../html/about.html" class="navigation-item">ABOUT</a>
+         </article>
+
+         <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
       </nav>
    </header>
 
@@ -47,28 +55,30 @@
          <h3 id="personal-name">Armirola Roseller III Tumolva</h3>
    </section>
 
-   <section id="contact"> <!--Third section first part with contact details-->
-      <h1 id="contact-title">GET IN TOUCH</h1>
-      <p id="contact-paragraph-details">Armirola Roseller III Tumolva<br><br>Email:<br>armirolaroseller@gmail.com<br><br>Tel:<br>+65 83886624</p>
-   </section>
-
-   <section id="contact-2"> <!--Third section second part with fill in form-->
-      <form onsubmit="revealMessage(event)" id="contact-form">
-         <label class="contact-form-label">NAME<br>
-            <input type="text" placeholder="First" id="contact-form-FN" required>
-            <input type="text" placeholder="Last" id="contact-form-LN">
-         </label>
-         <br>
-         <label class="contact-form-label">EMAIL<br>
-            <input type="text" id="contact-form-email" required>
-         </label>
-         <br>
-         <label class="contact-form-label">COMMENT<br>
-            <textarea type="text" rows="8" id="contact-form-comment" required></textarea>
-         </label>
-         <br>
-         <button type="submit" id="contact-form-submit">SUBMIT</button>
-      </form>
+   <section id="contact-container">
+      <article id="contact"> <!--Third section first part with contact details-->
+         <h1 id="contact-title">GET IN TOUCH</h1>
+         <p id="contact-paragraph-details">Armirola Roseller III Tumolva<br><br>Email:<br>armirolaroseller@gmail.com<br><br>Tel:<br>+65 83886624</p>
+      </article>
+   
+      <article id="contact-2"> <!--Third section second part with fill in form-->
+         <form onsubmit="revealMessage(event)" id="contact-form">
+            <label class="contact-form-label">NAME<br>
+               <input type="text" placeholder="First" id="contact-form-FN" required>
+               <input type="text" placeholder="Last" id="contact-form-LN">
+            </label>
+            <br>
+            <label class="contact-form-label">EMAIL<br>
+               <input type="text" id="contact-form-email" required>
+            </label>
+            <br>
+            <label class="contact-form-label">COMMENT<br>
+               <textarea type="text" rows="8" id="contact-form-comment" required></textarea>
+            </label>
+            <br>
+            <button type="submit" id="contact-form-submit">SUBMIT</button>
+         </form>
+      </article>
    </section>
    <p id="thank-you" style="display: none;">Thank you for your submission!</p> <!--After form submission-->
 
