@@ -7,29 +7,13 @@
    <link href="../styles/normalize.css" rel="stylesheet" type="text/css"> <!--Normalize CSS-->
    <link href="../styles/index-style.css" rel="stylesheet" type="text/css">
    <link href="../styles/index-media-style.css" rel="stylesheet" type="text/css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script> <!--Using ajax to delay website reload & for future form data processing-->
    <script src="../scripts/index-script.js" defer></script>
    <title>HOME - ROSELLER</title>
-
-   <!--For fade-in animation when loading webpage-->
-   <style>
-      html{
-         background-color: rgba(0, 0, 0, 0.9);
-      }
-
-      body{
-         opacity: 1;
-         transition: 0.6s opacity;
-         background-color: white;
-      }
-
-      body.fade-out{
-         opacity: 0;
-         transition: none;
-      }
-   </style>
 </head>
 <body>
    <script>
+      /*--Script for fading in to webpage--*/
       document.body.classList.add('fade-out');
    </script>
 
@@ -44,7 +28,7 @@
       </nav>
    </header>
 
-   <h1 id="aspiration-title"><center>MY ASPIRATIONS</center></h1>
+   <h1 id="aspiration-title" style="text-align: center;">MY ASPIRATIONS</h1>
    <section id="aspiration-container">
       <article id="aspiration"> <!--First section first part for aspirations for my future career-->
          <h2 id="aspiration-subtitle-DA">DATA ANALYST/SCIENTIST</h2>
@@ -57,12 +41,10 @@
       </article>
    </section>
 
-   <h3 id="personal-title"><center>STUDENT IN INFORMATION TECHNOLOGY (NGEE ANN POLYTECHNIC)</center></h3>
-   <section id="personal"> <!--Second section for brief introduction about me-->
-      <center>
+   <h3 id="personal-title" style="text-align: center;">STUDENT IN INFORMATION TECHNOLOGY (NGEE ANN POLYTECHNIC)</h3>
+   <section id="personal" style="text-align: center;"> <!--Second section for brief introduction about me-->
          <img src="../images/personal-img.jpg" alt="An image of me" id="personal-img">
          <h3 id="personal-name">Armirola Roseller III Tumolva</h3>
-      </center>
    </section>
 
    <section id="contact"> <!--Third section first part with contact details-->
@@ -71,7 +53,7 @@
    </section>
 
    <section id="contact-2"> <!--Third section second part with fill in form-->
-      <form id="contact-form">
+      <form onsubmit="revealMessage(event)" id="contact-form">
          <label class="contact-form-label">NAME<br>
             <input type="text" placeholder="First" id="contact-form-FN" required>
             <input type="text" placeholder="Last" id="contact-form-LN">
@@ -87,9 +69,8 @@
          <br>
          <button type="submit" id="contact-form-submit">SUBMIT</button>
       </form>
-
-      <h3 id="contact-thank" style="display: none;">Thank you!</h3>
    </section>
+   <p id="thank-you" style="display: none;">Thank you for your submission!</p> <!--After form submission-->
 
    <footer id="footer"> <!--Footer-->
       <p id="footer-paragraph-detail">Copyright 2021 by Armirola Roseller III Tumolva. All Rights Reserved.</p>

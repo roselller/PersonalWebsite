@@ -1,4 +1,20 @@
 /*--General styling--*/
+/*For fade-in animation when loading webpage*/
+html{
+   background-color: rgba(0, 0, 0, 0.9);
+}
+
+body{
+   opacity: 1;
+   transition: 0.6s opacity;
+   background-color: white;
+}
+
+body.fade-out{
+   opacity: 0;
+   transition: none;
+}
+
 h1, h2, h3, h6, p, label{
    font-family: lato;
 }
@@ -140,6 +156,7 @@ h1, h2, h3, h6, p, label{
    border: 2px solid #181818;
    border-radius: 5px;
    bottom: -40px;
+   cursor: pointer;
 }
 
 .social-form-button:hover{

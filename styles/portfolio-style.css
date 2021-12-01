@@ -1,4 +1,20 @@
 /*--General styling--*/
+/*For fade-in animation when loading webpage*/
+html{
+   background-color: rgba(0, 0, 0, 0.9);
+}
+
+body{
+   opacity: 1;
+   transition: 0.6s opacity;
+   background-color: white;
+}
+
+body.fade-out{
+   opacity: 0;
+   transition: none;
+}
+
 h1, h2, h3, h6, p, label{
    font-family: lato;
 }
@@ -91,8 +107,12 @@ h1, h2, h3, h6, p, label{
 #project-container{
    display: flex;
    padding: 150px 100px 150px;
+   margin: auto;
+   justify-content: center;
+   flex-direction: column;
    background-color: #E8E8E8;
-   justify-content: space-between;
+   width: auto;
+   overflow: hidden;
 }
 
 #project{
@@ -105,9 +125,77 @@ h1, h2, h3, h6, p, label{
 }
 
 #project-img-1{
-   width: 50%;
+   width: 40%;
    height: 100%;
 }
+
+#project-2{
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   float: left;
+   padding: 10px 50px 50px;
+   text-align: right;
+}
+
+#project-img-2{
+   width: 25%;
+   height: 100%;
+}
+
+#project-3{
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   float: left;
+   padding: 10px 50px 50px;
+   text-align: right;
+}
+
+#project-img-3{
+   width: 40%;
+   height: 100%;
+}
+
+/* Project navigation */
+
+#project-navigation{
+   position: relative;
+   top: -100px;
+}
+
+.dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+   background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+   -webkit-animation-name: fade;
+   -webkit-animation-duration: 1.5s;
+   animation-name: fade;
+   animation-duration: 1.5s;
+ }
+ 
+ @-webkit-keyframes fade {
+   from {opacity: .4} 
+   to {opacity: 1}
+ }
+ 
+ @keyframes fade {
+   from {opacity: .4} 
+   to {opacity: 1}
+ }
 
 /*--Socials styling--*/
 #social{
@@ -127,6 +215,7 @@ h1, h2, h3, h6, p, label{
    border: 2px solid #181818;
    border-radius: 5px;
    bottom: -40px;
+   cursor: pointer;
 }
 
 .social-form-button:hover{
