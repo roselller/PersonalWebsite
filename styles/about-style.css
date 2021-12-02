@@ -85,7 +85,7 @@ h1, h2, h3, h6, p, label{
    height: 5px;
    margin: 5px auto;
    -webkit-transition: all 0.3s ease-in-out;
-   transition: all 0.3 ease-in-out;
+   transition: all 3 ease-in-out;
    background-color: #fff;
 }
 
