@@ -23,6 +23,8 @@ Update 1.0.2:
 - [PORTFOLIO SCRIPT](../PersonalWebsite/scripts/portfolio-script.js) Added interactions for navigation with burger (media queries), fade from black to webpage, project slides
 - [ABOUT SCRIPT](../PersonalWebsite/scripts/about-script.js) Added interactions for navigation with burger (media queries), fade from black to webpage
 ### Fixed
+-
+
 
 ## [1.0.1] - 2-12-2021
 Update 1.0.1:
@@ -40,3 +42,4 @@ Update 1.0.1:
 - [INDEX CSS](../PersonalWebsite/styles/index-style.css) Edited stylesheet to be less clunky and amateur-ish
 - [INDEX SCRIPT](../PersonalWebsite/scripts/index-script.js) Added interactions for navigation with burger (media queries), fade from black to webpage, form submission alert
 ### Fixed
+-
